@@ -1,6 +1,10 @@
-import Elem from "./Elem.js";
+import Jatekter from "./Jatekter.js";
 
-const szuloElem = $(".jatekter");
-for (let index = 0; index < 9; index++) {
-  const elem = new Elem("X", szuloElem);
-}
+const jatekLista = ["X", " ", " ", " ", " ", " ", " ", " ", "O"];
+let lepes = 0;
+
+new Jatekter(jatekLista);
+
+$(window).on("katt", (event) => {
+  console.log(event.detail);
+});
