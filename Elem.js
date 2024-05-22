@@ -11,7 +11,6 @@ class Elem {
     this.#megjelenit();
     this.#divElem = this.#szuloElem.children("div:last-child");
     this.#divElem.on("click", () => {
-      console.log(this.#index);
       this.#trigger("katt");
     });
   }
